@@ -3,7 +3,7 @@ read -p "enter branch name" branchname
 git add .
 git commit -m "adding $branchname"
 git checkout master
-git merge $branchhname
+echo $branchname | git merge
 git checkout $branchname
 git push origin $branchname
 git merge master
